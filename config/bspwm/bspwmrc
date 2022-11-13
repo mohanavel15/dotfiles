@@ -18,6 +18,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 sxhkd &
+dunst &
 picom -b --config=$HOME/.config/picom/picom.conf --experimental-backends &
 feh --bg-scale $HOME/dotfiles/Wallpapers/wallhaven-l3zmwy_1920x1080.png
 $HOME/.config/polybar/launch.sh

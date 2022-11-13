@@ -2,13 +2,9 @@
 # wm independent hotkeys
 #
 
-
 # Rofi
 alt + Tab
   rofi -show window
-
-super + d 
-  rofi -show drun
 
 # terminal emulator
 super + Return
@@ -16,7 +12,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape

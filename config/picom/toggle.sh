@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/bash
 
 if (($(ps -aux | grep [p]icom | wc -l) > 0))
 then
