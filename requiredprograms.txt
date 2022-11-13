@@ -1,0 +1,8 @@
+bspwm
+sxhkd
+alacritty
+polybar
+rofi
+feh
+ranger
+picom
