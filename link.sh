@@ -19,3 +19,6 @@ ln config/rofi/config.rasi ~/.config/rofi/config.rasi
 
 mkdir -p ~/.config/sxhkd
 ln config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
+mkdir -p ~/.config/dunst
+ln config/dunst/dunstrc ~/.config/dunst/dunstrc
