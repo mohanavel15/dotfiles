@@ -19,6 +19,6 @@ bspc rule -a Screenkey manage=off
 
 sxhkd &
 dunst &
-picom -b --config=$HOME/.config/picom/picom.conf --experimental-backends &
+picom -b --config=$HOME/.config/picom/picom.conf &
 feh --bg-scale $HOME/dotfiles/Wallpapers/wallhaven-l3zmwy_1920x1080.png
 $HOME/.config/polybar/launch.sh
