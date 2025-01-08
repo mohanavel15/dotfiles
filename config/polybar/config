@@ -70,8 +70,8 @@ tray-padding = 2
 
 ;override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
@@ -411,14 +411,14 @@ menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
-[module/blur-toggle]
-type = custom/ipc
-hook-0 = echo OFF 
-hook-1 = echo ON 
-click-left = $HOME/.config/picom/toggle.sh
-initial = 2
-format-foreground = ${colors.primary}
-format-underline = ${colors.primary}
+;[module/blur-toggle]
+;type = custom/ipc
+;hook-0 = echo OFF 
+;hook-1 = echo ON 
+;click-left = $HOME/.config/picom/toggle.sh
+;initial = 2
+;format-foreground = ${colors.primary}
+;format-underline = ${colors.primary}
 
 
 [settings]

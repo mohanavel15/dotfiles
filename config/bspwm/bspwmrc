@@ -17,7 +17,9 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-sxhkd &
+xinput set-prop 9 "libinput Tapping Enabled" 1
+xinput set-prop 9 "libinput Natural Scrolling Enabled" 1
+
 dunst &
 picom -b --config=$HOME/.config/picom/picom.conf &
 feh --bg-scale $HOME/dotfiles/Wallpapers/wallhaven-l3zmwy_1920x1080.png
