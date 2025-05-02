@@ -8,3 +8,4 @@ chmod +x link.sh
 ./link.sh
 ```
 
+Add user to the `video` group for brightness key to work

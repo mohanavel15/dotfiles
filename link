@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mkdir -p ~/.config/sway
+ln -f config/sway/config ~/.config/sway/config
+
+mkdir -p ~/.config/waybar
+ln -f config/waybar/config.jsonc ~/.config/waybar/config.jsonc
+ln -f config/waybar/style.css ~/.config/waybar/style.css
+
+mkdir -p ~/.config/alacritty
+ln -f config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+
+mkdir -p ~/.config/rofi
+ln -f config/rofi/config.rasi ~/.config/rofi/config.rasi
