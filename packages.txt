@@ -1,0 +1,7 @@
+alacritty
+rofi
+sway
+swayidle
+swaylock
+waybar
+sway-notification-center
