@@ -5,3 +5,5 @@ swayidle
 swaylock
 waybar
 sway-notification-center
+
+pipewire wireplumber xdg-desktop-portal xdg-desktop-portal-wlr
