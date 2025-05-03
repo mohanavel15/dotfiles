@@ -216,16 +216,22 @@ bar {
 gaps outer 4
 gaps inner 4
 
+client.focused          #c7ab7a #ddc7a1 #1d2021 #c7ab7a #c7ab7a
+client.focused_inactive #434a4c #303536 #d4be98 #434a4c #434a4c
+client.unfocused        #434a4c #303536 #d4be98 #434a4c #434a4c
+client.urgent           #c7ab7a #ddc7a1 #c14a4a #c7ab7a #c7ab7a
+
 ### Removes Title Bar
-default_border none
-default_floating_border none
+# default_border none
+# default_floating_border none
 
 # Brightness Button
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # Volume Buttons
-bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioRaiseVolume exec sh -c 'VOL=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk "{print \$2}"); \
+[ "$(echo "$VOL < 1.5" | bc)" -eq 1 ] && wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
