@@ -8,7 +8,6 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
@@ -22,7 +21,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/mohan/dotfiles/Wallpapers/lake-zurich-switzerland.png fill
+output * bg /home/mohan/dotfiles/Wallpapers/road-3.jpg fill
 #
 # Example configuration:
 #
@@ -243,5 +242,6 @@ bindsym $mod+Shift+n exec swaync-client -t -sw
 
 # Lockscreen
 bindsym XF86Sleep exec swaylock
+bindsym $mod+Mod1+l exec swaylock -i /home/mohan/dotfiles/Wallpapers/space-shuttle.png --scaling fill
 
 include /etc/sway/config.d/*

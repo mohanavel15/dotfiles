@@ -2,12 +2,10 @@
     "layer": "top",
     "spacing": 0,
     "height": 0,
-
     "margin-top": 8,
     "margin-right": 8,
     "margin-bottom": 0,
     "margin-left": 8,
-
     "modules-left": [
         "sway/workspaces"
     ],
@@ -32,19 +30,16 @@
         "all-outputs": true,
         "tooltip": false
     },
-
     "tray": {
         "spacing": 10,
         "tooltip": false
     },
-
     "clock": {
         "format": "{:%I:%M %p - %a, %d %b %Y}",
         "tooltip": false
     },
-
     "cpu": {
-        "format": "cpu {usage}%",
+        "format": "{usage}% ",
         "interval": 2,
 
         "states": {
@@ -53,24 +48,28 @@
     },
 
     "memory": {
-        "format": "mem {percentage}%",
+        "format": "{}% ",
         "interval": 2,
 
         "states": {
             "critical": 80
         }
     },
-
     "battery": {
-        "format": "bat {capacity}%",
-        "interval": 5,
         "states": {
-            "warning": 20,
-            "critical": 10
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
         },
-        "tooltip": false
+        "format": "{capacity}% {icon} ",
+        "format-full": "{capacity}% {icon} ",
+        "format-charging": "{capacity}%  ",
+        "format-plugged": "{capacity}%  ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
     },
-
     "network": {
         "format-wifi" : "wifi {bandwidthDownBits}",
         "format-ethernet": "enth {bandwidthDownBits}",
